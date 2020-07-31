@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GameHub</string>
+    <string name="main_activity_label">GameHub</string>
+    <string name="avalon_activity_label">Avalon</string>
+</resources>
