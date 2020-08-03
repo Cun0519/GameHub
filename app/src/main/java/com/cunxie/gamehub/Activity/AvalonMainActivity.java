@@ -5,9 +5,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.view.View;
-
 import com.cunxie.gamehub.AvalonRole;
-import com.cunxie.gamehub.AvalonRoleAdapter;
+import com.cunxie.gamehub.Adapter.AvalonRoleAdapter;
 import com.cunxie.gamehub.R;
 import com.cunxie.gamehub.Util.Signal;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -23,7 +22,7 @@ public class AvalonMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_avalon_main);
 
-        getRole();
+        getRoles();
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_avalon_main);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -40,10 +39,7 @@ public class AvalonMainActivity extends AppCompatActivity {
         });
     }
 
-    /**
-     * 获得各个角色的名字和图片
-     */
-    private void getRole() {
+    private void getRoles() {
         avalonRoleList.add(new AvalonRole("梅林", R.drawable.meilin,
                 "好人方的主公，他能看到除了黑老大之外的所有坏人，他需要在游戏中隐藏自己，给派西维尔透露信息。"));
         avalonRoleList.add(new AvalonRole("派西维尔", R.drawable.paixiweier,
@@ -61,4 +57,5 @@ public class AvalonMainActivity extends AppCompatActivity {
         avalonRoleList.add(new AvalonRole("爪牙", R.drawable.zhuaya,
                 "坏人方角色，能被梅林看到。"));
     }
+
 }

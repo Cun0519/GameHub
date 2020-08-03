@@ -2,18 +2,18 @@ package com.cunxie.gamehub;
 
 import android.content.Context;
 import android.content.Intent;
-
+import com.cunxie.gamehub.Activity.AvalonContentActivity;
+import com.cunxie.gamehub.Activity.AvalonMainActivity;
 import com.cunxie.gamehub.Util.Signal;
 
 public class Game {
+
     private String name;
     private int imageId;
-    private Intent intent;
 
-    public Game(String name, int imageId, Intent intent) {
+    public Game(String name, int imageId) {
         this.name = name;
         this.imageId = imageId;
-        this.intent = intent;
     }
 
     public String getName() {
@@ -25,10 +25,13 @@ public class Game {
     }
 
     public void goToGame(Context context) {
-        if (this.intent != null) {
-           context.startActivity(this.intent);
-        } else {
-            Signal.signalAlertDialog(context);
+        switch (this.name) {
+            case "Avalon":
+                context.startActivity(new Intent(context, AvalonMainActivity.class));
+                break;
+            default:
+                Signal.signalAlertDialog(context);
+                break;
         }
     }
 }

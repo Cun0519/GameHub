@@ -1,21 +1,18 @@
-package com.cunxie.gamehub;
+package com.cunxie.gamehub.Adapter;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import com.cunxie.gamehub.Game;
+import com.cunxie.gamehub.R;
 
 import java.util.List;
 
 public class GameAdapter extends RecyclerView.Adapter<GameAdapter.ViewHolder> {
-
-    private static final String TAG = "GameAdapter";
 
     private List<Game> mGameList;
 
@@ -46,8 +43,8 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.ViewHolder> {
             public void onClick(View view) {
                 int position = holder.getAdapterPosition();
                 Game game = mGameList.get(position);
+                //传递上下文
                 game.goToGame(view.getContext());
-                //Toast.makeText(view.getContext(), "You Click " + game.getName(), Toast.LENGTH_SHORT).show();
             }
         });
         return holder;

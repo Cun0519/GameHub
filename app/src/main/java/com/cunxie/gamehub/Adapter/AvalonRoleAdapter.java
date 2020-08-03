@@ -1,4 +1,4 @@
-package com.cunxie.gamehub;
+package com.cunxie.gamehub.Adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +8,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.cunxie.gamehub.AvalonRole;
+import com.cunxie.gamehub.R;
 import com.cunxie.gamehub.Util.Signal;
 
 import java.util.ArrayList;
@@ -44,7 +46,8 @@ public class AvalonRoleAdapter extends RecyclerView.Adapter<AvalonRoleAdapter.Vi
             public void onClick(View view) {
                 int position = holder.getAdapterPosition();
                 AvalonRole avalonRole = mAvalonRoleList.get(position);
-                Signal.signalToast(view.getContext(), "You Click " + avalonRole.getName());
+                //传递上下文
+                avalonRole.goToContent(view.getContext());
             }
         });
         return holder;
