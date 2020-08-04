@@ -4,4 +4,6 @@
     <dimen name="textsize_0">50sp</dimen>
     <dimen name="textsize_1">20sp</dimen>
     <dimen name="textsize_2">13sp</dimen>
+    <dimen name="textsize_3">40sp</dimen>
+    <dimen name="textsize_4">30sp</dimen>
 </resources>

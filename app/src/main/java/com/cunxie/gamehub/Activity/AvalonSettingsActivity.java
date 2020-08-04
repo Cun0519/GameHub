@@ -23,6 +23,7 @@ public class AvalonSettingsActivity extends AppCompatActivity {
         numberPicker.setMinValue(6);
         numberPicker.setMaxValue(10);
         numberPicker.setValue(6);
+        count = 6;
         numberPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
             @Override
             public void onValueChange(NumberPicker numberPicker, int i, int i1) {
