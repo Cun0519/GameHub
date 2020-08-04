@@ -26,10 +26,13 @@
             android:label="@string/avalon_activity_label" />
         <activity
             android:name=".Activity.AvalonSettingsActivity"
-            android:label="@string/avalon_activity_label"/>
+            android:label="@string/avalon_activity_label" />
         <activity
             android:name=".Activity.AvalonAssignmentActivity"
-            android:label="@string/avalon_activity_label"/>
+            android:label="@string/avalon_activity_label" />
+        <activity
+            android:name=".Activity.AvalonPlayActivity"
+            android:label="@string/avalon_activity_label" />
     </application>
 
 </manifest>
