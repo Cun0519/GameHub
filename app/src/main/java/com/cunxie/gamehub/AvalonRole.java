@@ -3,9 +3,9 @@ package com.cunxie.gamehub;
 import android.content.Context;
 import android.content.Intent;
 import com.cunxie.gamehub.Activity.AvalonContentActivity;
-import com.cunxie.gamehub.Util.Signal;
+import java.io.Serializable;
 
-public class AvalonRole {
+public class AvalonRole implements Serializable {
 
     private String name;
     private int imageId;
