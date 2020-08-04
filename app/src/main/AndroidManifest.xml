@@ -20,10 +20,16 @@
         </activity>
         <activity
             android:name=".Activity.AvalonMainActivity"
-            android:label="@string/avalon_activity_label"></activity>
+            android:label="@string/avalon_activity_label" />
         <activity
             android:name=".Activity.AvalonContentActivity"
-            android:label="@string/avalon_activity_label"></activity>
+            android:label="@string/avalon_activity_label" />
+        <activity
+            android:name=".Activity.AvalonSettingsActivity"
+            android:label="@string/avalon_activity_label"/>
+        <activity
+            android:name=".Activity.AvalonAssignmentActivity"
+            android:label="@string/avalon_activity_label"/>
     </application>
 
 </manifest>

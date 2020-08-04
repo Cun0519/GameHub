@@ -23,7 +23,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
             android:gravity="center_vertical"
-            android:textSize="50sp" />
+            android:textSize="@dimen/textsize_0" />
 
     </LinearLayout>
 

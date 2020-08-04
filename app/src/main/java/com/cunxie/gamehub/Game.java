@@ -2,7 +2,6 @@ package com.cunxie.gamehub;
 
 import android.content.Context;
 import android.content.Intent;
-import com.cunxie.gamehub.Activity.AvalonContentActivity;
 import com.cunxie.gamehub.Activity.AvalonMainActivity;
 import com.cunxie.gamehub.Util.Signal;
 

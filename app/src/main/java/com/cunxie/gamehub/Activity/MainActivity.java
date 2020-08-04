@@ -13,6 +13,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private List<Game> gameList = new ArrayList<>();
+    private RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         getGames();
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_main);
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_main);
         GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(layoutManager);
         GameAdapter adapter = new GameAdapter(gameList);
