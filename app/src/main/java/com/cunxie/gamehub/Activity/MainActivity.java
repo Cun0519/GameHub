@@ -3,10 +3,13 @@ package com.cunxie.gamehub.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.os.Bundle;
+
 import com.cunxie.gamehub.Game;
 import com.cunxie.gamehub.Adapter.GameAdapter;
 import com.cunxie.gamehub.R;
+
 import java.util.ArrayList;
 import java.util.List;
 

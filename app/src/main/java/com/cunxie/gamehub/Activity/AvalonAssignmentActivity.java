@@ -1,6 +1,7 @@
 package com.cunxie.gamehub.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
@@ -10,15 +11,17 @@ import android.view.ViewAnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.cunxie.gamehub.AvalonRole;
 import com.cunxie.gamehub.R;
 import com.cunxie.gamehub.Util.Signal;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class AvalonAssignmentActivity extends AppCompatActivity implements View.OnClickListener{
+public class AvalonAssignmentActivity extends AppCompatActivity implements View.OnClickListener {
 
     //count为全部玩家的总数
     private int count;
@@ -145,8 +148,8 @@ public class AvalonAssignmentActivity extends AppCompatActivity implements View.
             case R.id.button_avalon_assignment_play:
                 Signal.signalToast(AvalonAssignmentActivity.this, "游戏开始");
                 Intent intent = new Intent(AvalonAssignmentActivity.this, AvalonPlayActivity.class);
-                intent.putExtra("avalonRoleList", (Serializable)avalonRoleList);
-                intent.putExtra("avalonAssignmentList", (Serializable)avalonAssignmentList);
+                intent.putExtra("avalonRoleList", (Serializable) avalonRoleList);
+                intent.putExtra("avalonAssignmentList", (Serializable) avalonAssignmentList);
                 startActivity(intent);
                 finish();
                 break;

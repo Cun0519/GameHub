@@ -3,13 +3,16 @@ package com.cunxie.gamehub.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
 import com.cunxie.gamehub.AvalonRole;
 import com.cunxie.gamehub.Adapter.AvalonRoleAdapter;
 import com.cunxie.gamehub.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.ArrayList;
 import java.util.List;
 

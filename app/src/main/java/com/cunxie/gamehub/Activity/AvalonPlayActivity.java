@@ -1,14 +1,17 @@
 package com.cunxie.gamehub.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.NumberPicker;
+
 import com.cunxie.gamehub.AvalonRole;
 import com.cunxie.gamehub.R;
 import com.cunxie.gamehub.Util.Signal;
+
 import java.util.ArrayList;
 import java.util.List;
 

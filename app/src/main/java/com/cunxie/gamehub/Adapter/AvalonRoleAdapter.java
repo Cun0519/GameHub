@@ -5,12 +5,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.cunxie.gamehub.AvalonRole;
 import com.cunxie.gamehub.R;
-import com.cunxie.gamehub.Util.Signal;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +39,7 @@ public class AvalonRoleAdapter extends RecyclerView.Adapter<AvalonRoleAdapter.Vi
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.avalon_role_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_avalon_role, parent, false);
         final AvalonRoleAdapter.ViewHolder holder = new AvalonRoleAdapter.ViewHolder(view);
         holder.avalonRoleView.setOnClickListener(new View.OnClickListener() {
             @Override

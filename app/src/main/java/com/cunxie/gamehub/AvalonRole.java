@@ -2,7 +2,9 @@ package com.cunxie.gamehub;
 
 import android.content.Context;
 import android.content.Intent;
+
 import com.cunxie.gamehub.Activity.AvalonContentActivity;
+
 import java.io.Serializable;
 
 public class AvalonRole implements Serializable {
